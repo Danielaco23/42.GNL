@@ -15,6 +15,7 @@ NAME = gnl.a
 B_NAME = gnl_bonus.a
 
 all: $(NAME)
+	norminette
 
 $(NAME): $(OBJ)
 	@ar -rcs $(NAME) $(OBJ)
